@@ -1,0 +1,40 @@
+#contact{
+  .contact-info-box{
+    text-align: center;
+    i{
+      font-size: 30px;
+    }
+    .fa-phone{
+      transform: rotate(90deg);
+    }
+    h3{
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: $black;
+    }
+  }
+  .contact-us{
+    padding-top: 80px;
+    .col-md-6, .col-sm-6{
+      margin: 0 auto;
+    }    
+    .form-control {
+      border-radius: 0;
+      box-shadow: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      transition: all 0.4s ease-in-out;
+      height: 50px;
+    }
+    textarea {
+      height: 170px !important;
+    }
+    input[type="submit"] {
+      border: 2px solid #808080;
+      margin-top: 18px;
+      height: 54px;
+    }
+  }
+}

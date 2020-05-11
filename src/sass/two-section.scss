@@ -1,0 +1,62 @@
+#two-section{
+    padding: 60px 0;
+    .image{
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    h3{
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        line-height: 1.1;
+        color: $black;
+    }
+    p{
+        letter-spacing: 0px;
+        line-height: 28px;
+        margin: 0 0 10px;
+        color: #333333;
+        font-size: 14px;
+        text-align: left;
+    }
+    span{
+        display: block;
+        padding-bottom: 6px;
+        font-size: 16px;
+        min-width: 34px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .progress {
+        border-radius: 0;
+        box-shadow: none;
+        height: 6px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        background-color: #f5f5f5;
+        .progress-bar-primary {
+            background: #FFD321;
+        }
+        .progress-bar{
+            float: left;
+            width: 0;
+            height: 100%;
+            font-size: 12px;
+            line-height: 20px;
+            color: $white;
+            text-align: center;
+            background-color: #337ab7;
+            -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+            box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+            -webkit-transition: width .6s ease;
+            -o-transition: width .6s ease;
+            transition: width .6s ease;
+        }
+    }
+}

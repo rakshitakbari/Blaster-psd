@@ -1,0 +1,30 @@
+#team{
+    padding: 60px 0;
+    .team-box{
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .team-title{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+            h4{
+                font-weight: bold;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                line-height: 1.1;
+                color: $black;
+            }
+            h3{
+                color: #202020;
+                line-height: 4px;
+                font-weight: bold;
+                font-size: 24px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

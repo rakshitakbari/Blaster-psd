@@ -1,0 +1,44 @@
+.footer-area{
+    background-color: #04091e;
+    padding: 80px 0;
+    background: url(../images/footer-bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 20px 0;
+    .col-lg-12{
+        @include media-breakpoint-down(xs){
+            display: inline-block;
+        }
+        a{
+            padding: 20px;
+            width: 60px;
+            height: 60px;
+            border: 1px solid $black;
+            margin: 20px;
+            border-radius: 50px;
+            transition: 1s;
+            @include media-breakpoint-down(xs){
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover{
+                background-color: $black;
+                transition: 1s;
+                i{
+                    color: $white !important;
+                }
+            }
+            i{
+                font-size: 20px;
+                color: $black;
+            }
+        }
+    }
+}

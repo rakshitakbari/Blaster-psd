@@ -1,0 +1,90 @@
+#home{
+    background: url(../images/home-bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    .hero-details{
+        hr{
+            border: 2px solid #404040;
+            width: 100px;
+        }
+        h3{
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            line-height: 1.1;
+            color: $black;
+            @include media-breakpoint-down(xs){
+                font-size: 20px;
+            }
+        }
+        h1{
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: $black;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            @include media-breakpoint-down(xs){
+                font-size: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 30px;
+            }
+        }
+        .btn-default{
+            border: 1px solid $black;
+            color: #464d65;
+            background: 0 0;
+            border-radius: 5px;
+            text-transform: capitalize;
+            padding: 16px 50px;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: color .4s linear;
+            overflow: hidden;
+            position: relative;
+            &:hover{
+                color: $white !important;
+                &::before{
+                    transform: scaleY(1);
+                    border: 1px solid transparent;
+                    color: $white!important;
+                    z-index: -1;
+                }
+            }
+            &::before{
+                border: 1px solid transparent;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 101%;
+                height: 101%;
+                background: $black;
+                z-index: -1;
+                transition: transform .5s;
+                transition-timing-function: ease;
+                transform-origin: 0 0;
+                transition-timing-function: cubic-bezier(.5,1.6,.4,.7);
+                transform: scaleY(0);
+                border-radius: 0;
+            }
+        }
+    }
+}
